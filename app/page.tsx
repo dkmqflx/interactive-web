@@ -76,6 +76,26 @@ export default function Home() {
               <span aria-hidden>→</span>
             </span>
           </Link>
+          <Link
+            href="/confetti"
+            className="group relative overflow-hidden rounded-2xl border border-black/[0.08] bg-white p-8 transition hover:border-black/30 dark:border-white/[0.12] dark:bg-zinc-950 dark:hover:border-white/40"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+              Project 04 · Canvas
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold text-black dark:text-zinc-50">
+              Confetti
+            </h2>
+            <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              Three rotating streams of confetti pour from the center while
+              click-bursts fire from the left edge — circles and squares, all
+              with wobble, gravity, and rotation.
+            </p>
+            <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-black transition group-hover:gap-3 dark:text-zinc-50">
+              Open project
+              <span aria-hidden>→</span>
+            </span>
+          </Link>
         </section>
       </main>
     </div>
