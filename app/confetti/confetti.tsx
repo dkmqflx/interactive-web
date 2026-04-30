@@ -214,9 +214,10 @@ export default function Confetti() {
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
       deg += 1;
 
-      confetti({ nx: 0.5, ny: 0.5, count: 5, deg: 225 + deg, spread: 1 });
-      confetti({ nx: 0.5, ny: 0.5, count: 5, deg: 90 + deg, spread: 1 });
-      confetti({ nx: 0.5, ny: 0.5, count: 5, deg: 315 + deg, spread: 1 });
+      confetti({ nx: 0.5, ny: 0.5, count: 4, deg: 0 + deg, spread: 4 });
+      confetti({ nx: 0.5, ny: 0.5, count: 4, deg: 90 + deg, spread: 4 });
+      confetti({ nx: 0.5, ny: 0.5, count: 4, deg: 180 + deg, spread: 4 });
+      confetti({ nx: 0.5, ny: 0.5, count: 4, deg: 270 + deg, spread: 4 });
 
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
