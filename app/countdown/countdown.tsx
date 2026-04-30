@@ -440,6 +440,12 @@ export default function Countdown() {
     setRunning(false);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => triggerCountdown(), 120);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const numbers: Array<{ ref: React.RefObject<HTMLSpanElement | null>; text: string }> = [
     { ref: span5Ref, text: "5" },
     { ref: span4Ref, text: "4" },
