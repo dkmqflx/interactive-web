@@ -209,8 +209,8 @@ export default function FireworksCanvas() {
 
     const createTail = () => {
       const x = randomIntBetween(
-        scene.canvasWidth * 0.1,
-        scene.canvasWidth * 0.9,
+        scene.canvasWidth * 0.08,
+        scene.canvasWidth * 0.96,
       );
       const vy =
         randomIntBetween(scene.canvasHeight / 30, scene.canvasHeight / 22) * -1;
