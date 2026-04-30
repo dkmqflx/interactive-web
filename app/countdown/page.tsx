@@ -40,9 +40,6 @@ export default function CountdownPage() {
         >
           ← Showcase
         </Link>
-        <span className="text-xs uppercase tracking-[0.3em] text-white/60">
-          Liminal Studio
-        </span>
       </nav>
 
       <Countdown />
@@ -61,8 +58,8 @@ export default function CountdownPage() {
               Five seconds before midnight. The breath before a kiss. The pause
               before the curtain. We design those exact intervals — the precise
               tempo that turns ordinary seconds into something an audience will
-              remember a decade later. Anticipation is a craft. We treat it
-              like one.
+              remember a decade later. Anticipation is a craft. We treat it like
+              one.
             </p>
           </div>
         </div>
