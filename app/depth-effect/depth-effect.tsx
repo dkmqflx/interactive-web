@@ -125,12 +125,15 @@ export default function DepthEffect() {
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setClearColor(0x000000, 1);
-    container.appendChild(renderer.domElement);
 
     const canvasSize = {
       width: window.innerWidth,
       height: window.innerHeight,
     };
+
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(canvasSize.width, canvasSize.height);
+    container.appendChild(renderer.domElement);
 
     const clock = new THREE.Clock();
     const textureLoader = new THREE.TextureLoader();
@@ -203,8 +206,8 @@ export default function DepthEffect() {
       camera.aspect = canvasSize.width / canvasSize.height;
       camera.updateProjectionMatrix();
 
-      renderer.setSize(canvasSize.width, canvasSize.height);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(canvasSize.width, canvasSize.height);
     };
 
     resize();
