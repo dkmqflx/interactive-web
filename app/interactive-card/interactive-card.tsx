@@ -105,7 +105,7 @@ function buildCardTexture(card: CardDesign): THREE.CanvasTexture {
   ctx.fillStyle = card.textColor;
   ctx.font = "300 78px 'Helvetica Neue', Arial, sans-serif";
   ctx.textBaseline = "top";
-  ctx.fillText("Visa", 70, 60);
+  ctx.fillText("Card", 70, 60);
   ctx.font = "500 78px 'Helvetica Neue', Arial, sans-serif";
   ctx.fillStyle = card.accentColor;
   ctx.fillText(card.tier, 220, 60);
@@ -172,7 +172,7 @@ function buildCardTexture(card: CardDesign): THREE.CanvasTexture {
   ctx.fillStyle = "#ffffff";
   ctx.font = "italic 900 110px 'Helvetica Neue', Arial, sans-serif";
   ctx.textAlign = "right";
-  ctx.fillText("VISA", canvas.width - 60, 590);
+  ctx.fillText("CARD", canvas.width - 60, 590);
   ctx.font = "italic 400 38px 'Helvetica Neue', Arial, sans-serif";
   ctx.fillStyle = card.accentColor;
   ctx.fillText(card.tier, canvas.width - 60, 700);
@@ -385,10 +385,10 @@ export default function InteractiveCard() {
   };
 
   return (
-    <div className="relative h-svh w-full overflow-hidden bg-black">
+    <div className="relative h-svh w-full overflow-hidden bg-gradient-to-b from-slate-50 via-blue-50 to-blue-100">
       <div ref={wrapperRef} className="absolute inset-0" />
       <div className="pointer-events-none absolute inset-x-0 bottom-10 flex justify-center sm:bottom-16">
-        <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/15 bg-black/50 px-3 py-2 backdrop-blur-md sm:gap-3 sm:px-4">
+        <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-1 rounded-full border border-slate-200 bg-white/90 px-2 py-1.5 shadow-lg shadow-blue-500/10 backdrop-blur-md sm:gap-2 sm:px-3">
           {CARDS.map((card) => {
             const isActive = card.id === activeId;
             return (
@@ -396,10 +396,10 @@ export default function InteractiveCard() {
                 key={card.id}
                 type="button"
                 onClick={() => handleSelect(card.id)}
-                className={`rounded-full px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] transition sm:text-sm ${
+                className={`rounded-full px-4 py-2 text-xs font-semibold tracking-wide transition sm:text-sm ${
                   isActive
-                    ? "bg-white text-black"
-                    : "text-white/70 hover:text-white"
+                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/30"
+                    : "text-slate-600 hover:text-slate-900"
                 }`}
               >
                 {card.tier}
