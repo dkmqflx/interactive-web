@@ -56,7 +56,6 @@ export default function FireworksPage() {
             href="/"
             className="text-xs uppercase tracking-[0.3em] text-white/60 transition hover:text-white"
           >
-            ← Showcase
           </Link>
           <span className="text-xs uppercase tracking-[0.3em] text-white/60">
             Vesper Pyrotechnics

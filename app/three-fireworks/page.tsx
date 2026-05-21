@@ -19,7 +19,6 @@ export default function ThreeFireworksPage() {
             href="/"
             className="text-xs uppercase tracking-[0.3em] text-white/60 transition hover:text-white"
           >
-            ← Showcase
           </Link>
           <span className="text-xs uppercase tracking-[0.3em] text-white/60">
             Three.js Fireworks

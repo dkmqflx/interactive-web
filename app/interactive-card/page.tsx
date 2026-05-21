@@ -111,7 +111,6 @@ export default function InteractiveCardPage() {
           href="/"
           className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
         >
-          ← Showcase
         </Link>
         <span className="text-sm font-bold text-blue-600">Credit Card</span>
       </nav>

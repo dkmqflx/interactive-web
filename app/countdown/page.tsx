@@ -38,7 +38,6 @@ export default function CountdownPage() {
           href="/"
           className="text-xs uppercase tracking-[0.3em] text-white/60 transition hover:text-white"
         >
-          ← Showcase
         </Link>
       </nav>
 
